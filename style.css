@@ -1,0 +1,135 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --main-text-color: #222;
+    --accent-color: crimson;
+    --tile-bg: #1f1f1f;
+  }
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Syne', sans-serif;
+    margin: auto;
+    max-width: 85%;
+    line-height: 1.6;
+  }
+  header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-bottom: 0.75rem;
+  }
+  em {
+    color: darkred;
+  }
+  strong {
+    font-weight: bold;
+  }
+  img {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    min-width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+  }
+  section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 6px;
+  }
+  fieldset {
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  input, textarea, select, button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  input:focus, textarea:focus {
+    border-color: var(--accent-color);
+  }
+  .inline-example {
+    display: inline;
+  }
+  .block-example {
+    display: block;
+    margin-top: 1rem;
+  }
+  .box-shorthand {
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+  }
+  .box-longhand {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  a:hover {
+    color: var(--accent-color);
+  }
+  .warfaref-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+  }
+  .tile {
+    background: repeating-linear-gradient(
+      45deg,
+      #2c2c2c,
+      #2c2c2c 10px,
+      #1f1f1f 10px,
+      #1f1f1f 20px
+    );
+    color: #f2f2f2;
+    padding: 1rem;
+    border: 1px solid #555;
+    font-family: 'Courier New', Courier, monospace;
+    transition: transform 0.2s ease-in-out;
+  }
+  .tile:hover {
+    transform: scale(1.05);
+    background: #000;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 12px var(--accent-color);
+  }
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: #e8e8e8;
+    }
+    .warfaref-grid {
+      padding: 1rem;
+    }
+    h1, h2 {
+      font-size: 1.2rem;
+    }
+  }
